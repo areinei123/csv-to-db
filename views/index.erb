@@ -5,15 +5,15 @@
   </head>
   <body>
     <h1>Brussels Sprouts</h1>
-      <form action="/ingredients" method="post">
-        <label for="ingredient">Add Ingredient:</label>
-        <input type="text" id="ingredient" name="ingredient">
-        <input type="submit">
-      </form>
-  <ul>
-    <% ingredients.each do |ingredient| %>
-      <li><%= ingredient["ingredient"] %></a></li>
-    <% end %>
-  </ul>
+    <form action="/ingredients" method="post">
+      <label for="ingredient">Add Ingredient:</label>
+      <input type="text" id="ingredient" name="ingredient">
+      <input type="submit">
+    </form>
+    <ul>
+      <% ingredients.each do |ingredient| %>
+        <li><%= ingredient["ingredient"] %></a></li>
+      <% end %>
+    </ul>
   </body>
 </html>
